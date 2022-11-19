@@ -64,7 +64,9 @@
         </li>
       </div>
       <div class="right_side">
-        <div class="text-subtitle1 text-bold">Be the first to know</div>
+        <div class="text-subtitle1 text-bold be_first">
+          Be the first to know
+        </div>
         <q-btn flat class="bg-white">
           <div class="btn_text">JOIN OUR NEWSLETTER</div>
         </q-btn>
@@ -186,5 +188,129 @@ p {
 }
 .terms {
   gap: 40px;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer .top {
+    width: 60%;
+  }
+
+  .top h6,
+  .links_container h6 {
+    font-size: 2rem;
+  }
+
+  .top p,
+  .links_container li {
+    font-size: 1.2rem;
+  }
+  .contact,
+  .bottom_text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 2% 6%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .top h6,
+  .links_container h6 {
+    font-size: 1.75rem;
+  }
+
+  .top p,
+  .links_container li {
+    font-size: 1.05rem;
+  }
+  .contact,
+  .bottom_text {
+    font-size: 1rem;
+  }
+  .btn_text {
+    letter-spacing: 0.15em;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .top h6,
+  .links_container h6 {
+    font-size: 1.55rem;
+  }
+
+  .links_container h6 {
+    padding-bottom: 2.5%;
+  }
+
+  .top p,
+  .links_container li {
+    font-size: 0.95rem;
+  }
+  .contact,
+  .bottom_text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer_links {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .contact_container {
+    margin: 7% 0 3%;
+    display: grid;
+    gap: 25px;
+  }
+  .links_container h6 {
+    border: none;
+    position: relative;
+  }
+  .links_container h6::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: white;
+    width: 60%;
+  }
+  .be_first {
+    margin-bottom: 1%;
+  }
+  .terms {
+    gap: 20px;
+  }
+  .bottom_text {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footer .bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0 6%;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .links_container h6::after {
+    width: 100%;
+  }
+  .footer .top {
+    width: 100%;
+  }
+  .terms {
+    gap: 25px;
+  }
+  .right_side {
+    margin: 2% 0 4%;
+  }
 }
 </style>
